@@ -236,11 +236,11 @@
   position: static;
   padding: 8px 12px;
   font-size: 1rem;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   background: none;
   color: #000;
-  min-width: 40px;
-  min-height: 40px;
+  min-width: 70px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
