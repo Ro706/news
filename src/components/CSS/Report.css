@@ -1,0 +1,105 @@
+.report-container {
+    margin-top: 100px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-image: url('../../assets/asset 33.svg');
+    background-size: cover;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* Image full width and high visual priority */
+.report-header-image {
+    width: 100vw;
+    height: 100vh;
+    margin-left: -290px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 40px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.report-date {
+    text-align: right;
+    font-size: 0.875rem;
+    color: #222;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.report-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: right;
+    margin: 0;
+    max-width: 700px;
+    margin-left: auto;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.report-section {
+    margin-top: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    text-align: left;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.report-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #111;
+    text-align: left;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.report-section h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 30px;
+    color: black;
+    margin-bottom: 10px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.report-footer-description {
+    font-style: italic;
+    color: #333;
+    margin-top: 30px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.report-video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #000;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.report-not-found {
+    padding: 100px 20px;
+    text-align: center;
+    font-size: 2rem;
+    color: crimson;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+@media (max-width: 768px) {
+
+    .report-title,
+    .report-section {
+        text-align: right;
+        margin: 0 auto;
+        font-family: 'Jost', 'Raleway', sans-serif;
+    }
+
+    .report-header-image {
+        height: 60vh;
+        font-family: 'Jost', 'Raleway', sans-serif;
+    }
+}

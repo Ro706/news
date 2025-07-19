@@ -1,0 +1,28 @@
+/* Title Section */
+.Title-section {
+  color: black;
+  width: 100%;
+  font-size: clamp(2.5rem, 8vw, 100px);
+  display: flex;
+  font-weight: 400;
+  padding-left: clamp(20px, 8vw, 100px);
+  align-items: center;
+  background-image: url('../../assets/asset 33.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* Optional: Ensure text doesn't overflow on very small screens */
+@media (max-width: 600px) {
+  .Title-section {
+    font-size: clamp(2rem, 10vw, 3rem);
+    padding-left: 16px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+  }
+  .arrow-work {
+    display: none;
+  }
+}

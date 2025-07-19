@@ -1,0 +1,170 @@
+/* Home.css - Responsive, clean, matching the Textgrid component */
+
+/* Grid container */
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 80px;
+  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1440" height="775.7" viewBox="0 0 1440 775.7"><style>.st0{fill:none;stroke:%23ccc;stroke-miterlimit:10;vector-effect:non-scaling-stroke}</style><path class="st0" d="M0 221.6h1440M0 110.8h1440M0 332.4h1440M0 443.3h1440M0 554h775.6M0 664.8h1440M110.8 0v775.7M221.6 0v775.7M332.4 0v775.7M443.2 0v775.7M554 0v775.7M664.8 0v443.1M775.6 0v775.7M886.4 0v443.1M997.2 0v443.1M1108 0v443.1M1218.8 0v443.1M886.4 664.8v110.9M997.2 664.8v110.9M1108 664.8v110.9M1218.8 664.8v110.9M1329.6 0v775.7M664.6 554v221.7M1329.6 554H1440"/></svg>');
+  background-repeat: repeat;
+  background-size: contain;
+  position: relative;
+}
+
+/* Main headline */
+.section-text {
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section-text h1 {
+  font-size: 5rem;
+  font-weight: 420;
+  line-height: 1.05;
+  color: #222;
+  padding-left: 10px;
+  background: transparent;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+/* Arrow styling */
+.arrow {
+  width: 7em;
+  height: 4em;
+  margin-left: 460px;
+  animation: left-right 2s infinite;
+  display: block;
+}
+
+@keyframes left-right {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+}
+
+/* Description section */
+.section-description {
+  max-width: 440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #222;
+  background: transparent;
+  margin-top: -100px;
+  margin-left: 680px;
+  /* margin-bottom: 60px; */
+}
+
+.section-description p {
+  color: #222;
+  line-height: 1.4;
+  text-align: justify;
+  background: transparent;
+  display: flex;
+  align-items: flex-start;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.read-more-btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 0.7em 2em;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 1rem;
+}
+
+.read-more-btn:hover {
+  background: #444;
+}
+
+/* Why Choose Us section */
+.why-choose-us {
+  margin-top: 1.5rem;
+  background: #f7f7f7;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.why-choose-us h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  color: #222;
+}
+
+.why-choose-us ul {
+  list-style: disc inside;
+  padding-left: 1.2em;
+  margin: 0;
+}
+
+.why-choose-us li {
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .grid {
+    padding: 40px 20px;
+  }
+  .section-text h1 {
+    font-size: 3.2rem;
+  }
+  .section-description {
+    margin-left: 0;
+    max-width: 100%;
+    font-size: 1rem;
+  }
+  .arrow {
+    margin-left: 0;
+    margin-bottom: 40px;
+    width: 6em;
+    height: 3em;
+  }
+}
+
+@media (max-width: 750px) {
+  .grid {
+    padding: 16px;
+    justify-content: flex-start; /* Top align the box */
+  }
+  .section-text h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .section-description {
+    margin-top: -100px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    max-width: 70%;
+    font-size: 0.97rem;
+    gap: 14px;
+  }
+  .arrow {
+    display: block;
+    width: 4em;
+    height: 3em;
+  }
+  .why-choose-us {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+}

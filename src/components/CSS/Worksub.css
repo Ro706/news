@@ -1,0 +1,229 @@
+/* Container */
+.worksub-container {
+    background: #fff;
+    margin-top: 100px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+    color: #000;
+}
+
+/* Banner Section */
+.worksub-banner-section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    background: #eee;
+}
+
+.worksub-banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Main Content Section */
+.worksub-content-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    padding: 48px 8% 32px;
+    background: #fff;
+    flex-wrap: wrap;
+    background-image: url('../../assets/asset 33.svg');
+}
+
+.worksub-left {
+    flex: 1 1 320px;
+    min-width: 260px;
+    max-width: 480px;
+}
+
+.worksub-left-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #e50914;
+}
+
+.worksub-left-para {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+.worksub-right {
+    flex: 1 1 320px;
+    min-width: 260px;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.worksub-right-heading {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.worksub-left-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.worksub-right-para {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* Challenge, Approach, Result Block */
+.worksub-challenge-block {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.worksub-challenge-block h4 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+.worksub-challenge-block p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0;
+}
+
+/* Video Section */
+.worksub-video-section {
+    margin: 40px 8% 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
+}
+
+.worksub-video {
+    width: 100%;
+    display: block;
+    background: #000;
+    border-radius: 12px;
+}
+
+/* Related Images Section */
+.worksub-related-section {
+    padding: 48px 8%;
+    background: #000;
+    color: #fff;
+    margin-top: 40px;
+    text-align: center;
+    background-image: url('../../assets/asset 33.svg');
+}
+
+.worksub-related-section h4 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.worksub-related-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.worksub-related-image-block {
+    width: 320px;
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 14px;
+}
+
+.worksub-related-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.worksub-related-title {
+    font-size: 1.05rem;
+    color: #fff;
+    margin-top: 12px;
+    text-align: center;
+    padding: 0 8px;
+}
+
+/* Not Found */
+.worksub-notfound {
+    padding: 80px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #e50914;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .worksub-content-section {
+        flex-direction: column;
+        gap: 32px;
+        padding: 32px 4% 24px;
+    }
+
+    .worksub-banner-section {
+        height: 260px;
+    }
+
+    .worksub-video-section {
+        margin: 32px 4% 0;
+    }
+
+    .worksub-related-section {
+        padding: 32px 4%;
+    }
+}
+
+@media (max-width: 600px) {
+    .worksub-banner-section {
+        height: 160px;
+    }
+
+    .worksub-content-section {
+        padding: 18px 2% 12px;
+    }
+
+    .worksub-related-section {
+        padding: 18px 2%;
+    }
+
+    .worksub-related-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .worksub-related-image-block {
+        width: 90%;
+    }
+
+    .worksub-related-image {
+        height: 220px;
+    }
+}

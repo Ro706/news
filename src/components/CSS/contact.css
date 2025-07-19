@@ -1,0 +1,250 @@
+/* Reset and base styles */
+body {
+  font-family: 'Jost', 'Raleway', sans-serif;
+  /* background: #f8f8f8; */
+  margin: 0;
+  padding: 0;
+}
+
+/* Form Container */
+.form-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  border-radius: 16px;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  /* background: #fff; */
+  /* box-shadow: 0 6px 32px rgba(0,0,0,0.08); */
+}
+
+/* Heading */
+.form-heading {
+  font-size: 5rem;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 16px;
+  line-height: 1.1;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* Divider */
+.form-divider {
+  border: none;
+  height: 2px;
+  background: #000000;
+  margin: 24px 0 32px 0;
+  width: 100%;
+}
+
+/* Region Selection */
+.region-selection {
+  margin-bottom: 32px;
+}
+
+.form-label {
+  display: block;
+  font-size: 1.85rem;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 8px;
+  font-family: inherit;
+}
+
+.form-label.required::after {
+  content: '*';
+  color: #ED1F24;
+  margin-left: 4px;
+}
+
+.region-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.region-button {
+  background: #f2f2f2;
+  color: #000000;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  font-family: inherit;
+}
+
+.region-button.active {
+  background: #000000;
+  color: #fff;
+}
+
+.region-button:hover:not(.active) {
+  background: #e0e0e0;
+}
+
+/* Form Layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.form-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-group.full-width {
+  width: 100%;
+  min-width: unset;
+}
+
+/* Inputs and Textarea */
+.form-input,
+.form-textarea {
+  width: 100%;
+  font-size: 1rem;
+  color: #000000;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding: 10px 0 8px 0;
+  margin-bottom: 2px;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-bottom-color: #ED1F24;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 90px;
+  border-radius: 8px;
+  border: 2px solid #000000;
+  padding: 10px;
+  margin-top: 2px;
+}
+
+/* Checkbox Group */
+.form-checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 0.98rem;
+  color: #444;
+  font-family: inherit;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.form-checkbox {
+  accent-color: #ED1F24;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+/* Submit Button */
+.submit-button {
+  background: #ED1F24;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+  transition: background 0.2s, transform 0.15s;
+  font-family: inherit;
+}
+
+.submit-button:hover {
+  background: #b31719;
+  transform: translateY(-2px);
+}
+
+.submit-arrow {
+  vertical-align: middle;
+  fill: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .form-container {
+    max-width: 98vw;
+    padding: 40px 24px;
+  }
+  .form-heading {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .form-container {
+    padding: 32px 16px;
+  }
+  .form-heading {
+    font-size: 2.2rem;
+  }
+  .form-row {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding:40px;
+    margin: 24px auto;
+    border-radius: 8px;
+  }
+  .form-heading {
+    font-size: 2rem;
+  }
+  .form-divider {
+    margin: 16px 0 20px 0;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form-label {
+    font-size: 1rem;
+  }
+  .form-group {
+    min-width: unset;
+    width: 100%;
+  }
+  .submit-button {
+    width: 100%;
+    justify-content: center;
+  }
+  .region-buttons {
+    flex-direction: row;
+    gap: 8px;
+  }
+}

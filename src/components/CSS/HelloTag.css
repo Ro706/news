@@ -1,0 +1,148 @@
+.hellotag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 16px;
+    background: #000 url('../../assets/asset 33.svg') center/cover repeat;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    overflow: hidden;
+    min-height: 60vh;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.hellotag h1 {
+    margin: 0 0 32px 0;
+    letter-spacing: 2px;
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+    line-height: 1.3;
+    font-size: 3.5rem;
+    word-break: break-word;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.hellotag h1 + h1 {
+    margin-top: 32px;
+}
+
+.hellotag h1 a {
+    font-size: 3.5rem;
+    font-weight: 300;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 12px;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    word-break: break-word;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* BEFORE hover underline */
+.hellotag h1 a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff2d82;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+}
+
+/* AFTER hover underline */
+.hellotag h1 a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff2d82;
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 0;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
+}
+
+/* Hover in */
+.hellotag h1 a:hover {
+    transform: scale(1.03);
+}
+
+.hellotag h1 a:hover::before {
+    transform: translateX(8px) scaleX(0.2);
+    opacity: 0;
+}
+
+.hellotag h1 a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    opacity: 1;
+}
+
+/* Hover out animation (reverse ::after) */
+.hellotag h1 a:not(:hover)::after {
+    transform: scaleX(0);
+    transform-origin: right;
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+}
+.fa-phone{
+    margin-right: 8px;
+    color: #ffffff;
+    font-size: 3.5rem;
+}
+/* Intro animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    .hellotag {
+        padding: 48px 8px;
+    }
+    .hellotag h1,
+    .hellotag h1 a {
+        font-size: 2rem;
+        font-family: 'Jost', 'Raleway', sans-serif;
+    }
+    .fa-phone{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hellotag {
+        padding: 32px 4vw;
+        min-height: 40vh;
+    }
+    .hellotag h1,
+    .hellotag h1 a {
+        font-size: 1.4rem;
+        line-height: 1.2;
+        font-family: 'Jost', 'Raleway', sans-serif;
+    }
+    .hellotag h1 {
+        margin-bottom: 20px;
+    }
+    .hellotag h1 + h1 {
+        margin-top: 20px;
+    }
+    .hellotag h1 a {
+        padding-bottom: 8px;
+    }
+    .fa-phone {
+        font-size: 2rem;
+    }
+}

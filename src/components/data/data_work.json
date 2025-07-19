@@ -1,0 +1,231 @@
+[
+    {
+        "title": "Google Pixel 9 and 9a - Featured Image (Landscape)",
+        "brand": "Google",
+        "description": "Reimagining print media into a mixed reality product launch experience",
+        "tags": [
+            "Product & Brand Campaigns",
+            "Design, Motion & Illustration",
+            "Emerging Tech Innovation",
+            "Brand Stewardship"
+        ],
+        "regions": ["GLOBAL", "US", "EMEA"],
+        "industry": ["Technology", "B2C"],
+        "services": [
+            "Product & Brand Campaigns",
+            "Design, Motion & Illustration",
+            "Strategic Positioning"
+        ],
+        "video": {
+            "url": "./video/gemini.mp4",
+            "link": "/work/google-pixel-9-and-9a"
+        }
+    },
+    {
+        "title": "Netflix - Eclipse 2025 - Featured Image (Landscape)",
+        "brand": "Netflix",
+        "description": "Unveiling a new user experience for Netflix TV",
+        "tags": [
+            "Product & Brand Campaigns",
+            "Social & Content Marketing",
+            "Design, Motion & Illustration",
+            "Messaging & TOV",
+            "Localisation"
+        ],
+        "regions": ["GLOBAL", "US"],
+        "industry": ["B2C", "Technology"],
+        "services": [
+            "Product & Brand Campaigns",
+            "Social & Content Marketing",
+            "Localisation",
+            "Messaging & TOV"
+        ],
+        "video": {
+            "url": "./video/gemini.mp4",
+            "link": "/work/netflix-eclipse-2025"
+        }
+    },
+    {
+        "title": "Google India - Gemini Film G4IN - Featured Image (Landscape)",
+        "brand": "Gemini",
+        "description": "Inspiring users to unlock their dreams with Gemini",
+        "tags": [
+            "Product & Brand Campaigns",
+            "Strategic Positioning",
+            "Design, Motion & Illustration"
+        ],
+        "regions": ["INSEA"],
+        "industry": ["Technology", "B2C"],
+        "services": [
+            "Product & Brand Campaigns",
+            "Strategic Positioning",
+            "Design, Motion & Illustration"
+        ],
+        "video": {
+            "url": "./video/gemini.mp4",
+            "link": "/work/google-india-gemini-film-g4in"
+
+        }
+    },
+    {
+        "title": "Jio x YT Shorts Campaign - Featured Image (Landscape)",
+        "brand": "Jio",
+        "description": "Fuelling creator ambition with the power of Jio & Youtube Shorts",
+        "tags": [
+            "Product & Brand Campaigns",
+            "Social & Content Marketing",
+            "Strategic Positioning",
+            "Localisation"
+        ],
+        "regions": ["INSEA"],
+        "industry": ["Technology", "B2C"],
+        "services": [
+            "Product & Brand Campaigns",
+            "Social & Content Marketing",
+            "Strategic Positioning",
+            "Localisation"
+        ],
+        "video": {
+            "url": "./video/gemini.mp4",
+            "link": "/work/jio-x-yt-shorts-campaign"
+        }
+    },
+    {
+        "title": "EON - Featured Image (Landscape)",
+        "brand": "EON",
+        "description": "Making the magic real for a cloud unicorn with big ambitions",
+        "tags": [
+            "Product & Brand Campaigns",
+            "Always-on Comms Support",
+            "Social & Content Marketing",
+            "Design, Motion & Illustration"
+        ],
+        "regions": ["EMEA", "GLOBAL"],
+        "industry": ["Technology", "B2B"],
+        "services": [
+            "Product & Brand Campaigns",
+            "Always-on Comms Support",
+            "Social & Content Marketing",
+            "Design, Motion & Illustration"
+        ],
+        "video": {
+            "url": "./video/gemini.mp4",
+            "link": "/work/jio-x-yt-shorts-campaign"
+        }
+    },
+    {
+        "title": "Netflix Product Marketing - Featured Image (Landscape)",
+        "brand": "Netflix",
+        "description": "Bridging the gap between product and marketing",
+        "tags": [
+            "Product & Brand Campaigns",
+            "Social & Content Marketing",
+            "Always-on Comms Support",
+            "Design, Motion & Illustration"
+        ],
+        "regions": ["GLOBAL", "US"],
+        "industry": ["B2C", "Technology"],
+        "services": [
+            "Product & Brand Campaigns",
+            "Social & Content Marketing",
+            "Always-on Comms Support",
+            "Design, Motion & Illustration"
+        ],
+        "video": {
+            "url": "./video/gemini.mp4",
+            "link": "/work/netflix-product-marketing"
+        }
+    },
+    {
+        "title": "ChromeOS 2024 - Crowdstrike video - Featured Image (Landscape)",
+        "brand": "Google",
+        "description": "Leveraging a real world insight to offer a new era of computing",
+        "tags": [
+            "Product & Brand Campaigns",
+            "Design, Motion & Illustration",
+            "Brand Stewardship",
+            "Social & Content Marketing"
+        ],
+        "regions": ["GLOBAL", "US", "EMEA"],
+        "industry": ["Technology", "B2B"],
+        "services": [
+            "Product & Brand Campaigns",
+            "Design, Motion & Illustration",
+            "Brand Stewardship",
+            "Social & Content Marketing"
+        ],
+        "video": {
+            "url": "./video/gemini.mp4",
+            "link": "/work/chromeos-2024-crowdstrike-video"
+        }
+    },
+    {
+        "title": "Earnest - Featured Image (Landscape)",
+        "brand": "Earnest",
+        "description": "Evolving a fintech identity system for digital comms",
+        "tags": [
+            "Brand Stewardship",
+            "Identity Toolkits",
+            "Always-on Comms Support",
+            "Design, Motion & Illustration"
+        ],
+        "regions": ["US"],
+        "industry": ["FinTech", "B2B"],
+        "services": [
+            "Brand Stewardship",
+            "Always-on Comms Support",
+            "Design, Motion & Illustration",
+            "Research & Analysis"
+        ],
+        "video": {
+            "url": "./video/gemini.mp4",
+            "link": "/work/earnest"
+        }
+    },
+    {
+        "title": "Samsung Bespoke Jet - Featured Image (Landscape)",
+        "brand": "Samsung",
+        "description": "Driving conversation and conversions for a new product launch",
+        "tags": [
+            "Product & Brand Campaigns",
+            "Social & Content Marketing",
+            "Design, Motion & Illustration",
+            "Brand Stewardship"
+        ],
+        "regions": ["GLOBAL", "EMEA", "INSEA"],
+        "industry": ["B2C", "Technology"],
+        "services": [
+            "Product & Brand Campaigns",
+            "Social & Content Marketing",
+            "Design, Motion & Illustration",
+            "Brand Stewardship"
+        ],
+        "video": {
+            "url": "./video/gemini.mp4",
+            "link": "/work/samsung-bespoke-jet"
+        }
+    },
+    {
+        "title": "Google AI Safety - Featured Image (Landscape)",
+        "brand": "Google",
+        "description": "Helping Google build trust in AI safety",
+        "tags": [
+            "Localisation",
+            "Always-on Comms Support",
+            "Design, Motion & Illustration",
+            "Brand Stewardship"
+        ],
+        "regions": ["GLOBAL", "US", "EMEA"],
+        "industry": ["Technology", "B2B", "HealthTech"],
+        "services": [
+            "Localisation",
+            "Always-on Comms Support",
+            "Design, Motion & Illustration",
+            "Brand Stewardship"
+        ],
+        "video": {
+            "url": "./video/gemini.mp4",
+            "link": "/work/google-ai-safety"
+        }
+    }
+]

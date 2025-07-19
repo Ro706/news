@@ -1,0 +1,255 @@
+/* Global Font Family */
+body, html {
+  font-family: 'Jost', 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Filter Button Section */
+.right-filter-btn {
+  text-align: right;
+  padding: 24px 60px;
+  font-size: 22px;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.filter-btn span {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  background: #f0f0f0;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.filter-btn span:hover {
+  background: #e0e0e0;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  margin-top: 80px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* Popup Content Box */
+.popup-content {
+  background: #fff;
+  padding: 48px;
+  width: 95%;
+  max-width: 1400px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.22);
+  position: relative;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  max-height: 85vh;
+  overflow-y: auto;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* Each Section */
+.popup-section {
+  margin-top: 28px;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.popup-section h3 {
+  font-size: 26px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* List Styling */
+.popup-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.popup-section ul li {
+  padding: 10px 0;
+  font-size: 20px;
+  color: #111;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* Checkbox Styling */
+.popup-section input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Close Button */
+.close-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: bold;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  line-height: 1;
+  border-radius: 4px;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+.close-btn:hover {
+  background: #333;
+}
+
+/* News Card Container: 2 cards per row */
+.news-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: left;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* News Card Styles - Bigger and Portrait Image */
+.news-card {
+  background: #f9f9f9;
+  padding: 48px;
+  border-radius: 20px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease;
+  flex: 1 1 45%;
+  max-width: 45%;
+  min-width: 480px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 48px;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+.news-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Portrait image size for all cards - bigger and portrait */
+.news-card img {
+  border-radius: 16px;
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+  background: #eee;
+}
+
+/* Date text */
+.news-card p {
+  font-size: 1.1em;
+  color: #555;
+  margin-top: 22px;
+  margin-bottom: 12px;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* Title with underline on hover */
+.news-title {
+  font-size: 1.7em;
+  margin: 20px 0;
+  position: relative;
+  display: inline-block;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.news-title a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.news-title a:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #ff2d82;
+  bottom: -4px;
+  left: 0;
+}
+
+/* Tags */
+.tags {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 8px 18px;
+  font-size: 17px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.tag:hover {
+  background: #ff2d82;
+  border-color: #ff2d82;
+  color: #fff;
+}
+
+/* Responsive: stack cards on medium screens */
+@media (max-width: 1400px) {
+  .news-card {
+    max-width: 60%;
+    flex-basis: 60%;
+    padding: 36px;
+    min-width: 340px;
+  }
+  .news-card img {
+    width: 320px;
+    height: 480px;
+  }
+  .news-card-container {
+    gap: 32px;
+  }
+}
+
+/* Responsive: stack cards on small screens */
+@media (max-width: 900px) {
+  .news-card {
+    max-width: 100%;
+    flex-basis: 100%;
+    padding: 20px;
+    min-width: 0;
+  }
+  .news-card img {
+    width: 200px;
+    height: 320px;
+  }
+  .news-card-container {
+    gap: 16px;
+  }
+}

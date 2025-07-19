@@ -1,0 +1,656 @@
+/* ====== General Styles ====== */
+body {
+    font-family: 'Jost', 'Raleway', sans-serif;
+    color: #000;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* ====== Title Section ====== */
+.title-container {
+    padding: 100px;
+    background-color: #fff;
+    padding: 2rem 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Jost', 'Raleway', sans-serif;
+    color: #000;
+    background-image: url('../../assets/asset 33.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.titleaboutContainer {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.title-about,
+.title-about2 {
+    margin-left: -60px;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    word-break: break-word;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.title-about2 {
+    margin-left: 450px;
+    margin-top: -150px;
+}
+
+.arrowAbout {
+    width: 400px;
+    margin-top: -40px;
+    margin-left: 0.5rem;
+    max-width: 90vw;
+    height: auto;
+    z-index: -1;
+}
+
+/* Responsive part */
+@media (max-width: 1200px) {
+    .title-container {
+        padding: 1.5rem 0.5rem;
+        background-size: contain;
+    }
+    .titleaboutContainer {
+        max-width: 95%;
+    }
+    .title-about,
+    .title-about2 {
+        font-size: 2.5rem;
+        margin-left: 0;
+    }
+    .title-about2 {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .arrowAbout {
+        width: 250px;
+        max-width: 80vw;
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .title-container {
+        padding: 1rem 0.25rem;
+    }
+    .titleaboutContainer {
+        max-width: 100%;
+    }
+    .title-about,
+    .title-about2 {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+    .title-about2 {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .arrowAbout {
+        width: 120px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .title-container {
+        padding: 0.5rem 0.1rem;
+        background-size: cover;
+    }
+    .titleaboutContainer {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+    .title-about {
+        font-size: 1.2rem;
+        margin-left: 0;
+        margin-top: 0;
+        padding-left: 20px;
+        /* padding-right: 20px; */
+    }
+    .title-about2 {
+        font-size: 1.2rem;
+        margin-left: 50px;
+        margin-top: -20px;
+    }
+    .arrowAbout {
+        width: 40px;
+    }
+}
+
+
+/* ====== Headings & Lines ====== */
+.about-heading,
+.Partnerships-heading {
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding: 110px ;
+    margin-bottom: 1rem;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.Partnerships-heading {
+    font-size: 2.2rem;
+}
+
+.aboutline,
+.aboutworkline,
+.about-industry-workline,
+.aboutpartnershipsline {
+    display: block;
+    width: 100%;
+    max-width: 1050px;
+    height: 2px;
+    background: #000;
+    border-radius: 2px;
+    margin-top: -30px;
+}
+
+.aboutline {
+    margin-top: -140px;
+    margin-left: 290px;
+}
+
+.aboutworkline {
+    width: 60%;
+    margin-top: -130px;
+    margin-left: 430px;
+}
+
+.about-industry-workline {
+    width: 55%;
+    margin-top: -140px;
+    margin-left: 490px;
+}
+
+.aboutpartnershipsline {
+    margin-left: 390px;
+    background: #000;
+    max-width: 1050px;
+    height: 2px;
+    border-radius: 2px;
+    margin-top: -30px;
+}
+
+/* ====== Video Section ====== */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background: rgba(0, 0, 0, 0.4);
+    background-image: url('../../assets/asset 33.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    grid-column: 3 / span 8;
+    grid-row: 4 / span 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    color: #fff;
+    backdrop-filter: blur(2px);
+    padding: 2rem;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.content p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    line-height: 1.6;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* ====== Video Line ====== */
+.videoline {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    margin: 1.5rem 0;
+    max-width: none;
+    margin-left: 0;
+}
+
+/* ====== Markets Section ====== */
+.markets-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.markets-left {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 250px;
+}
+
+.markets-description {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-left: 60px;
+    margin-top: 20px;
+    color: #000;
+    line-height: 1.2;
+    word-break: break-word;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.markets-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 250px;
+    padding: 10px;
+}
+
+.markets-right .markets-description {
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-left: 0;
+    margin-top: 0;
+    color: #222;
+    line-height: 1.5;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* ====== Partnership Section (NEW) ====== */
+.Partnerships-heading {
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.aboutpartnershipsline {
+    display: block;
+    max-width: 1050px;
+    height: 2px;
+    background: #000;
+    width: 80%;
+    margin-top: -140px;
+    margin-left: 350px;
+}
+
+.partner-ship-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.partner-ship-left {
+    flex: 1;
+    min-width: 250px;
+}
+
+.partner-ship-title {
+    font-weight: 800;
+    font-size: 3.5rem;
+    margin-left: 60px;
+    margin-top: 20px;
+    color: #000;
+    line-height: 1.2;
+    word-break: break-word;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.partner-ship-right {
+    flex: 1;
+    min-width: 250px;
+}
+
+.partner-ship-desc {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-left: 60px;
+    margin-top: 20px;
+    color: #222;
+    line-height: 1.5;
+    word-break: break-word;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* ====== About Work Section ====== */
+.about-work-description {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-left: 60px;
+    margin-top: 20px;
+    color: #000;
+    line-height: 1.2;
+    word-break: break-word;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.about-work-right {
+    flex: 1;
+    margin-left: 0;
+}
+
+.about-work-right ul {
+    margin-left: 60px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #222;
+    padding-left: 20px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.about-work-right li {
+    margin-bottom: 0.5rem;
+    list-style: disc inside;
+}
+
+/* ====== About Work List ====== */
+.about-work-title {
+    font-weight: 400;
+    font-size: 2.4rem;
+    margin-left: 60px;
+    margin-top: 20px;
+    color: #000;
+    line-height: 1.2;
+    word-break: break-word;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.about-work-list {
+    margin-left: 60px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #222;
+    padding-left: 20px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.about-work-list li {
+    margin-bottom: 0.5rem;
+    list-style: disc inside;
+}
+
+/* ====== Responsive Styles ====== */
+@media (max-width: 1200px) {
+    .aboutline,
+    .aboutworkline,
+    .about-industry-workline {
+        margin-left: 0;
+        max-width: 90vw;
+    }
+    .aboutpartnershipsline {
+        margin-left: -200px;
+        max-width: 90vw;
+    }
+    .title-about2 {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .markets-container,
+    .partner-ship-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    .markets-left,
+    .markets-right,
+    .partner-ship-left,
+    .partner-ship-right {
+        margin-right: 0;
+        margin-left: 0;
+        min-width: 0;
+    }
+    .markets-description,
+    .partner-ship-title {
+        font-size: 1.5rem;
+        margin-left: 20px;
+    }
+    .markets-right .markets-description,
+    .partner-ship-desc {
+        font-size: 1rem;
+    }
+    .about-heading,
+    .Partnerships-heading {
+        font-size: 2.2rem;
+        margin-left: 20px;
+    }
+    .content {
+        grid-column: 2 / span 10;
+        grid-row: 4 / span 6;
+        padding: 1rem;
+    }
+    .content h1 {
+        font-size: 2.2rem;
+    }
+    .content p {
+        font-size: 1.2rem;
+    }
+    .arrowAbout {
+        width: 250px;
+        max-width: 80vw;
+    }
+
+    .about-work-right p{
+        font-size: 1.85rem;
+    }
+    .about-work-description,
+    .about-work-title {
+        font-size: 0.85rem;
+        margin-left: 10px;
+    }
+    .about-work-right ul,
+    .about-work-list {
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .titleaboutContainer {
+        max-width: 95%;
+    }
+    .title-about,
+    .title-about2 {
+        font-size: 2.5rem;
+    }
+    .about-heading,
+    .Partnerships-heading {
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+    .aboutline,
+    .aboutworkline,
+    .about-industry-workline,
+    .aboutpartnershipsline {
+        margin-left: 0;
+        max-width: 95vw;
+    }
+    .about-industry-workline {
+        width: 80%;
+        margin-left: 0;
+    }
+    .markets-description,
+    .partner-ship-title {
+        font-size: 1.8rem;
+        margin-left: 10px;
+    }
+    .markets-right .markets-description,
+    .partner-ship-desc {
+        font-size: 1rem;
+    }
+    .content {
+        grid-column: 1 / span 12;
+        grid-row: 5 / span 4;
+        padding: 1rem;
+    }
+    .content h1 {
+        font-size: 2rem;
+    }
+    .arrowAbout {
+        width: 180px;
+    }
+    .about-work-description,
+    .about-work-title {
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+    .about-work-right ul,
+    .about-work-list {
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .title-container{
+        height: 200px;
+        align-content: center;
+        justify-content: center;
+
+    }
+    .arrowAbout{
+        margin-left: 40px;
+        margin-top: -70px;
+    }
+    .markets-container{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .titleaboutContainer {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+    .title-about {
+        font-size: 1.5rem;
+        margin-left: 0px;
+        margin-top: 0;
+    }
+    .title-about2 {
+        font-size: 1.5rem;
+        margin-left: 100px;
+        margin-top: -40px;
+    }
+    .about-heading,
+    .Partnerships-heading {
+        font-size: 1.2rem;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .aboutline {
+        margin-top: -125px;
+        margin-left: 140px;
+        max-width: 60vw;
+    }
+    .aboutworkline {
+        margin-top: -135px;
+        margin-left: 210px;
+        max-width: 40vw;
+        font-weight: 800;
+    }
+    .about-industry-workline {
+        width: 40vw;
+        margin-top: -125px;
+        margin-left: 240px;
+    }
+    .about-work-right .about-work-description{
+        font-size: 1.2rem;
+        margin-left: 10px;
+    }
+    .aboutpartnershipsline {
+        margin-top: -130px;
+        margin-left: 170px;
+        max-width: 49vw;
+    }
+    .markets-description,
+    .partner-ship-title {
+        font-size: 0.95rem;
+        margin-left: 5px;
+    }
+    .markets-right .markets-description,
+    .partner-ship-desc {
+        font-size: 0.95rem;
+    }
+    .video-container {
+        height: 60vh;
+    }
+    .content {
+        grid-column: 1 / span 12;
+        grid-row: 6 / span 2;
+        padding: 0.5rem;
+    }
+    .content h1 {
+        font-size: 1.2rem;
+    }
+    .content p {
+        font-size: 0.95rem;
+    }
+    .arrowAbout {
+        width: 50px;
+        margin-top: 0;
+    }
+    .about-work-description,
+    .about-work-title {
+        font-size: 1.2rem;
+        margin-left: 5px;
+    }
+    .about-work-right ul,
+    .about-work-list {
+        margin-left: 5px;
+        font-size: 0.95rem;
+    }
+    .partner-ship-desc {
+        font-size: 0.95rem;
+        margin-left: 5px;
+    }
+}

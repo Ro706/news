@@ -1,0 +1,57 @@
+.get-in-touch-container {
+    background: #ff2c87;
+    color: black;
+    text-align: center;
+    padding: 80px 20px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.get-in-touch-heading {
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.get-in-touch-btn {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 999px;
+    font-size: 32px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.get-in-touch-btn-text {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.arrows {
+    display: inline-block;
+    font-size: 70px;
+    margin-top: 2px;
+    transition: transform 0.3s;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.get-in-touch-btn:hover {
+    background: #ffe0f0;
+    color: #ff2c87;
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+.get-in-touch-btn:hover .arrow {
+    transform: translateX(10px) scale(1.1);
+}

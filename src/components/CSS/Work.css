@@ -1,0 +1,175 @@
+.work-section {
+    background: #040214 url('../../assets/asset 33.svg') center repeat;
+    color: #fff;
+    min-height: 100vh;
+    padding: 40px 0 40px 70px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.work-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    text-align: left;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.line {
+    width: 100%;
+    max-width: 1050px;
+    height: 2px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    background: none;
+    display: block;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.netflix-video,
+.jio {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 320px;
+    max-height: 600px;
+    margin: 0 auto 30px 0;
+    background: #18162a;
+    border-radius: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.work-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.jio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.google-title {
+    padding-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.google-description {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 30px;
+    color: #fff;
+    line-height: 1.5;
+    max-width: 800px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.google-description::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #ff2d82;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+.google-description:hover::after {
+    transform: scaleX(1);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .netflix-video,
+    .jio {
+        height: 45vh;
+        min-height: 240px;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 900px) {
+    .work-section {
+        padding: 30px 0 30px 20px;
+    }
+    .work-title {
+        font-size: 1.7rem;
+    }
+    .google-title,
+    .google-description {
+        margin-left: 10px;
+    }
+    .google-description {
+        font-size: 1.3rem;
+        max-width: 95vw;
+    }
+    .netflix-video,
+    .jio {
+        height: 32vh;
+        min-height: 160px;
+        max-height: 260px;
+    }
+}
+
+@media (max-width: 600px) {
+    .work-section {
+        padding: 15px 0 15px 5px;
+    }
+    .work-title {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .line {
+        max-width: 95vw;
+    }
+    .google-title {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        padding-top: 5px;
+    }
+    .google-description {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .netflix-video,
+    .jio {
+        width: 98vw;
+        height: 18vh;
+        min-height: 90px;
+        max-height: 120px;
+        border-radius: 10px;
+    }
+}

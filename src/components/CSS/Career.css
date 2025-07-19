@@ -1,0 +1,303 @@
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.career-video-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    max-width: 330px;
+    height: auto;
+    min-height: 60px;
+    padding: 1rem;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    background-color: aliceblue;
+    font-size: 2.2rem;
+    text-align: center;
+    z-index: 1;
+    box-sizing: border-box;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.career-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.job-opening-line {
+    display: block;
+    width: 60%;
+    max-width: 1050px;
+    height: 2px;
+    margin: 20px auto 0 auto;
+    background: #000;
+    border-radius: 2px;
+    margin-left: 33%;
+    margin-top: -30px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .career-video-heading {
+        font-size: 1.5rem;
+        width: 90vw;
+        max-width: 95vw;
+        min-height: 40px;
+        padding: 0.5rem;
+    }
+    .job-opening-line {
+        width: 90vw;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .career-video-heading {
+        font-size: 1.1rem;
+        padding: 0.3rem;
+        min-height: 30px;
+    }
+    .job-opening-line {
+        width: 95vw;
+        margin-top: 5px;
+    }
+}
+
+/* .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.95);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.modal-content {
+    background: white;
+    border: 1px solid #000;
+    padding: 40px;
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: black;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.apply-button {
+    margin-top: 20px;
+    background: #ff007a;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.job-opening-line {
+    display: block;
+    height: 2px;
+    background: #000;
+    margin: 10px 0 30px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.job-item {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.job-item h2 {
+    font-size: 24px;
+    margin: 0;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.job-meta {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.job-tag {
+    border: 1px solid #000;
+    padding: 4px 10px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.job-location {
+    font-size: 14px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+.job-plus {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    font-size: 24px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* Container */
+.insider-slider {
+    overflow: hidden;
+    width: 100%;
+    background: #ffffff;
+    padding: 0;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* Slider container */
+.insider-slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 24px;
+    padding: 16px 0;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* Card */
+.insider-card {
+    min-width: 320px;
+    max-width: 320px;
+    background: #000000;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 24px;
+    margin-right: 8px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.18s;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+.insider-card:hover {
+    transform: translateY(-4px) scale(1.02);
+}
+
+/* Quote */
+.insider-quote {
+    margin-bottom: 16px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+.insider-quote p {
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin: 0;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* Person Section */
+.insider-person {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+.insider-person img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    background: #000000;
+}
+.insider-person h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* Info tags */
+.insider-info {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+.insider-tag {
+    background: #eee;
+    color: #919191;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 12px;
+    margin-right: 8px;
+    font-weight: 500;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+.insider-location {
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .insider-slider-container {
+        gap: 16px;
+    }
+    .insider-card {
+        min-width: 240px;
+        max-width: 240px;
+        padding: 16px;
+    }
+}
+@media (max-width: 600px) {
+    .insider-slider-container {
+        gap: 8px;
+        padding: 8px 0;
+    }
+    .insider-card {
+        min-width: 90vw;
+        max-width: 98vw;
+        padding: 12px;
+    }
+    .insider-person img {
+        width: 44px;
+        height: 44px;
+    }
+    .insider-person h3 {
+        font-size: 16px;
+    }
+}

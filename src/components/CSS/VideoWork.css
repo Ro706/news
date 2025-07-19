@@ -1,0 +1,265 @@
+/* Global Font Family */
+body, html {
+  font-family: 'Jost', 'Raleway', sans-serif;
+}
+
+/* Filter Button Section */
+.right-filter-btn {
+  text-align: right;
+  padding: 16px 24px;
+  font-size: 18px;
+}
+
+.filter-btn a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  background: #f0f0f0;
+  padding: 10px 16px;
+  border-radius: 4px;
+  transition: background 0.3s;
+  display: inline-block;
+}
+
+.filter-btn a:hover {
+  background: #e0e0e0;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255,255,255,0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 0 8px;
+}
+
+/* Popup Content Box */
+.popup-content {
+  background: #fff;
+  padding: 32px 16px;
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  position: relative;
+  border-top: 2px solid #111;
+  border-bottom: 2px solid #111;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* Layout for Filter Sections */
+.popup-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 16px;
+  padding-top: 16px;
+}
+
+.popup-section {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.popup-section:not(:last-child) {
+  border-right: 1px solid #ccc;
+  padding-right: 24px;
+}
+
+.popup-section h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #111;
+  padding-bottom: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+.popup-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup-section ul li {
+  padding: 8px 0;
+  font-size: 16px;
+  color: #222;
+}
+
+/* Checkbox Styling */
+.popup-section input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Scrollable Services */
+.services-scroll {
+  max-height: 220px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.services-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.services-scroll::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 3px;
+}
+.services-scroll::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* Close Button */
+.close-btn {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  line-height: 1;
+  border-radius: 4px;
+}
+.close-btn:hover {
+  background: #333;
+}
+
+/* Individual Video Card */
+.video-card {
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  margin-bottom: 16px;
+}
+
+video {
+  border-radius: 24px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Title with pink underline on hover */
+.video-title {
+  font-size: 28px;
+  margin: 8px 0;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.video-title:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #ff2d82;
+  bottom: -4px;
+  left: 0;
+}
+
+/* Brand below title */
+.video-brand {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+/* Tags list */
+.tags {
+  margin-top: 8px;
+}
+
+.tag {
+  display: inline-block;
+  margin: 4px 6px 0 0;
+  padding: 6px 12px;
+  font-size: 13px;
+  border: 1px solid #111;
+  background: #fff;
+  color: #111;
+  border-radius: 3px;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.tag:hover {
+  background: #ff2d82;
+  border: 1px solid #ff2d82;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .popup-content {
+    max-width: 98vw;
+    padding: 20px 8px;
+  }
+  .popup-sections {
+    gap: 16px;
+  }
+  .popup-section:not(:last-child) {
+    padding-right: 12px;
+  }
+  .video-title {
+    font-size: 22px;
+  }
+  .video-brand {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .right-filter-btn {
+    padding: 12px 8px;
+    font-size: 16px;
+  }
+  .popup-content {
+    padding: 12px 2px;
+    max-width: 100vw;
+  }
+  .popup-sections {
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 8px;
+    margin-top: 8px;
+  }
+  .popup-section:not(:last-child) {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+  }
+  .close-btn {
+    top: 8px;
+    right: 8px;
+    font-size: 18px;
+    padding: 6px 10px;
+  }
+  .video-card {
+    padding: 8px;
+  }
+  .video-title {
+    font-size: 18px;
+  }
+  .video-brand {
+    font-size: 13px;
+  }
+  .services-scroll {
+    max-height: 140px;
+    padding-right: 4px;
+  }
+}
