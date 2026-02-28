@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Newsmaker Media Group
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A high-performance, visually immersive agency platform built with **React 19**, **Framer Motion**, and **Tailwind CSS**. This project delivers a seamless storytelling experience for a creative and tech-focused media group.
 
-## Available Scripts
+## 🚀 Key Features
 
-In the project directory, you can run:
+### 💎 Immersive User Experience
+- **Adaptive Navbar:** Intelligent transparency switching using `react-router-dom` and `IntersectionObserver` to maintain contrast across diverse page sections.
+- **Dynamic Animations:** Fluid transitions and entry effects powered by `Framer Motion` for a premium, high-end feel.
+- **Video-First Design:** Optimized full-screen video backgrounds and interactive media elements throughout the Home, About, and Work pages.
 
-### `npm start`
+### 🛠️ Specialized Modules
+- **Service Explorer:** Interactive dropdown and overlay system for exploring PR, Digital Marketing, and Strategic Communications.
+- **Project Showcase:** Detailed work case studies with integrated video playback and rich media descriptions.
+- **Leadership Directory:** A grayscale-to-color interactive board showcasing agency talent and global reach.
+- **News & Insights:** A fully filterable news engine with category-based sorting and responsive card layouts.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 💻 Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend Framework:** React 19
+- **Styling:** Vanilla CSS (Modular), Tailwind CSS, and Styled Components
+- **Animation:** Framer Motion
+- **Routing:** React Router DOM (v7)
+- **State Management:** React Hooks (useState, useEffect, useRef)
+- **Utility:** Lucide React for iconography
 
-### `npm test`
+## 🏗️ Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```text
+src/
+├── components/          # Reusable UI components
+│   ├── about/           # About page specific sections
+│   ├── career/          # Job board and career modules
+│   ├── contact/         # Lead generation forms
+│   ├── home/            # Core landing page segments
+│   ├── News/            # News engine and reporting
+│   ├── people/          # Leadership and client components
+│   ├── service/         # Product and service definitions
+│   └── work/            # Portfolio and case study displays
+├── CSS/                 # Component-specific stylesheets
+├── data/                # JSON-based content stores
+├── images/              # Static brand assets
+└── video/               # Optimized web media
+```
 
-### `npm run build`
+## 🛠️ Development
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Local Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone & Install:**
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Run Development Server:**
+   ```bash
+   npm start
+   ```
+   *The application defaults to port **3045** via `cross-env`.*
 
-### `npm run eject`
+3. **Build for Production:**
+   ```bash
+   npm run build
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛡️ Recent Architectural Improvements
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Stability:** Upgraded to `react-scripts 5.0.1` to resolve Node.js 22+ execution errors and `ENOENT` spawn issues.
+- **Navbar Logic:** Refactored transparency state to be route-aware, preventing "white-on-white" text visibility bugs during navigation.
+- **Performance:** Optimized background media rendering and removed redundant CSS grid overlays to reduce paint times.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+© 2025 Newsmaker Media Group. All Rights Reserved.
