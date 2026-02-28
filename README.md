@@ -63,11 +63,3 @@ src/
    npm run build
    ```
 
-## 🛡️ Recent Architectural Improvements
-
-- **Stability:** Upgraded to `react-scripts 5.0.1` to resolve Node.js 22+ execution errors and `ENOENT` spawn issues.
-- **Navbar Logic:** Refactored transparency state to be route-aware, preventing "white-on-white" text visibility bugs during navigation.
-- **Performance:** Optimized background media rendering and removed redundant CSS grid overlays to reduce paint times.
-
----
-© 2025 Newsmaker Media Group. All Rights Reserved.
