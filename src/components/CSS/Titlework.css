@@ -5,7 +5,7 @@
   font-size: clamp(2.5rem, 8vw, 100px);
   display: flex;
   font-weight: 400;
-  padding-left: clamp(20px, 8vw, 100px);
+  padding: 120px clamp(20px, 8vw, 100px);
   align-items: center;
   background-image: url('../../assets/asset 33.svg');
   background-size: cover;
@@ -13,6 +13,7 @@
   background-position: center;
   box-sizing: border-box;
   font-family: 'Jost', 'Raleway', sans-serif;
+  min-height: 40vh;
 }
 
 /* Optional: Ensure text doesn't overflow on very small screens */

@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import './components/CSS/servicepage.css';
 import './components/CSS/Navbar.css';
@@ -21,28 +21,43 @@ import NotFound from './components/NotFound';
 import Report from './components/News/Report';
 import Career from './components/Career';
 import Worksub from './components/Worksub';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+
+const AppContent = () => {
+  const [navbarTransparent, setNavbarTransparent] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    // Reset navbar transparency on route change
+    setNavbarTransparent(false);
+  }, [location]);
+
+  return (
+    <>
+      <Navbar isTransparent={navbarTransparent} />
+      <Routes>
+        <Route path="/" element={<Home setNavbarTransparent={setNavbarTransparent} />} />
+        <Route path='/careers' element={<Career />} />
+        <Route path='/work' element={<Work />} /> 
+        <Route path="/work/:slug" element={<Worksub />} />
+        <Route path="/services/:serviceId" element={<Services setNavbarTransparent={setNavbarTransparent} />} />
+        <Route path='/services' element={<Services setNavbarTransparent={setNavbarTransparent} />} />
+        <Route path='/about' element={<About setNavbarTransparent={setNavbarTransparent} />} />
+        <Route path='/clients' element={<People />} />
+        <Route path='/news' element={<News />} />
+        <Route path="/news/:slug" element={<Report />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+    </>
+  );
+};
 
 const App = () => {
-  const [navbarTransparent, setNavbarTransparent] = useState(false)
   return (
     <div className='App'>
       <Router>
-        <Navbar isTransparent={navbarTransparent} />
-        <Routes>
-          <Route path="/" element={<Home setNavbarTransparent={setNavbarTransparent} />} />
-          <Route path='/careers' element={<Career />} />
-          <Route path='/work' element={<Work />} /> 
-          <Route path="/work/:slug" element={<Worksub />} />
-          <Route path="/services/:serviceId" element={<Services />} />
-          <Route path='/services' element={<Services />} />
-          <Route path='/about' element={<About setNavbarTransparent={setNavbarTransparent} />} />
-          <Route path='/clients' element={<People />} />
-          <Route path='/news' element={<News />} />
-          <Route path="/news/:slug" element={<Report />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='*' element={<NotFound />} />
-        </Routes>
+        <AppContent />
       </Router>
     </div>
   );
